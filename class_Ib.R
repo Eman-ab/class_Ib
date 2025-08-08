@@ -38,9 +38,8 @@ data <- data[-4]
 # Save file  as CSV in results folder
 write.csv(data, file = "results/patient_info_clean.csv")
 # Save the entire R workspace
-save.image(file = "full_workspace.RData")
+save.image(file = "EmanAbdelrhman_Class_Ib_Assignment.RData")
 # Save selected objects only
-save(gender, diagnosis_fac, file = "workspace.RData")
+save(data,diagnosis_fac,gender, file = "EmanAbdelrhman_Class_Ib_Assignment.RData")
 # Load workspace
-load("workspace.RData")
-load("full_workspace.RData")
+load("EmanAbdelrhman_Class_Ib_Assignment.RData")
